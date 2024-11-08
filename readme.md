@@ -1,101 +1,70 @@
+# Getting Started with Create React App
 
----
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# E-commerce Product Browser Project
+## Available Scripts
 
-## Overview
+In the project directory, you can run:
 
-This project is an e-commerce product browser that allows users to view a list of products, filter them based on search and category, and view detailed information about individual products. The application leverages React.js and React Router for routing and dynamic content rendering.
+### `npm start`
 
-### Key Features:
-1. **Home Page**: Displays a list of products fetched from a public API (FakestoreAPI).
-2. **Product Detail Page**: Users can click on a product to view detailed information such as description, rating, and category.
-3. **Search and Filter**: Allows users to filter products by name or category.
-4. **Responsive UI**: The application is styled using Bootstrap for a clean and responsive interface.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
----
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Project Structure
+### `npm test`
 
-```
-src/
-├── components/
-│   ├── ProductList.js        # Fetches products and displays them using ProductCard
-│   ├── ProductCard.js        # Displays individual product info (name, price, image)
-│   ├── ProductDetail.js      # Shows detailed product information on the detail page
-│   └── SearchFilter.js       # Contains a search input and category dropdown for filtering
-├── pages/
-│   ├── HomePage.js           # Displays all products and search/filter options
-│   └── ProductPage.js        # Displays detailed information for a single product
-├── App.js                    # Main application file with routing setup
-└── index.js                  # Entry point for the React application
-```
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
----
+### `npm run build`
 
-## Installation
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-### Step 1: Clone the repository
-```bash
-git clone https://github.com/your-username/ecommerce-product-browser.git
-cd ecommerce-product-browser
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-### Step 2: Install Dependencies
-Make sure you have Node.js installed, then run the following command to install all required dependencies:
-```bash
-npm install
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### Step 3: Run the Application
-Once the dependencies are installed, run the app with the following command:
-```bash
-npm start
-```
-This will launch the app in your default browser at `http://localhost:3000`.
+### `npm run eject`
 
----
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## Features and Explanation
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-### 1. **Home Page (Product List)**
-- The home page fetches product data from the FakestoreAPI (`https://fakestoreapi.com/products`).
-- Products are displayed in a grid with essential information such as name, price, image, and a brief description.
-- Clicking on a product card navigates to a detailed product page.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### 2. **Product Detail Page**
-- The product detail page is dynamically rendered using React Router with URL parameters.
-- Each product's detailed information (description, category, rating, etc.) is fetched using the product’s ID from the URL.
-- A "Back to Products" button allows users to return to the home page.
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### 3. **Search and Filter**
-- The `SearchFilter` component includes a search bar to filter products by name and a dropdown to filter products by category.
-- The search term and selected category are passed as state to filter products shown on the home page.
+## Learn More
 
-### 4. **Pagination (Optional)**
-- Pagination is added to the `ProductList.js` component to limit the number of products shown per page. This helps prevent loading too many products at once.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
----
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Technologies Used
-- **React.js**: JavaScript library for building the user interface.
-- **React Router**: For handling routing between different pages (Home Page and Product Detail Page).
-- **Bootstrap**: For responsive design and styling.
-- **FakestoreAPI**: Public API used to fetch product data.
+### Code Splitting
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-## Future Improvements
-- **Pagination**: Implement pagination for better user experience when displaying a large number of products.
-- **Authentication**: Add user authentication to allow users to add products to a shopping cart.
-- **Cart Functionality**: Implement a shopping cart to store user-selected items before checkout.
+### Analyzing the Bundle Size
 
----
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-## License
+### Making a Progressive Web App
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
----
+### Advanced Configuration
 
-This should give a clear and detailed explanation for users and developers working with your e-commerce product browser project! Let me know if you'd like any changes to this.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
